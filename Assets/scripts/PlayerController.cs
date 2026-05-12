@@ -8,16 +8,22 @@ public class PlayerController : MonoBehaviour
     private bool estaEnSuelo = true;
     private bool juegoEmpezado = false;
 
+    // --- VARIABLES DE AUDIO ---
+    private AudioSource miAudio;
+    public AudioClip sonidoSalto;
+    public AudioClip sonidoDisparo;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        // Buscamos el componente de audio al inicio
+        miAudio = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        // Iniciar el juego al presionar cualquier tecla
-       if (!juegoEmpezado && Input.GetKeyDown(KeyCode.Space))
+        if (!juegoEmpezado && Input.GetKeyDown(KeyCode.Space))
         {
             juegoEmpezado = true;
             anim.SetBool("juegoEmpezado", true);
@@ -25,24 +31,36 @@ public class PlayerController : MonoBehaviour
 
         if (juegoEmpezado)
         {
-            // Saltar con Barra Espaciadora
+            // Saltar
             if (Input.GetButtonDown("Jump") && estaEnSuelo)
             {
                 rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
                 estaEnSuelo = false;
                 anim.SetBool("estaEnSuelo", false);
                 anim.SetTrigger("saltar");
+
+                // REPRODUCIR SONIDO SALTO
+                if (sonidoSalto != null) 
+                {
+                    miAudio.PlayOneShot(sonidoSalto);
+                }
             }
 
-            // Disparar con la tecla F
+            // Disparar
             if (Input.GetKeyDown(KeyCode.F))
             {
                 anim.SetTrigger("disparar");
+
+                // REPRODUCIR SONIDO DISPARO
+                if (sonidoDisparo != null) 
+                {
+                    // Usamos PlayOneShot para que el sonido no se corte si disparás rápido
+                    miAudio.PlayOneShot(sonidoDisparo);
+                }
             }
         }
     }
 
-    // ESTA ES LA PARTE DEL ERROR:
     private void OnCollisionEnter2D(Collision2D collision) 
     {
         if (collision.gameObject.CompareTag("Suelo"))
