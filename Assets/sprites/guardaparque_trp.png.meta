@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: b8bee62cc45b4fd4097063713fe7904b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guardaparque_trp_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 567
+        width: 54
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c8b0147aca22c4c96fbd9f2c4f5026
+      internalID: 162046759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 567
+        width: 55
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fbc68f5a679074ab2e8cc0c6dde63d
+      internalID: -394617313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 568
+        width: 54
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a849bb6d3ef3c484c8f01443a183ac5d
+      internalID: -1719347081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_3
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 567
+        width: 73
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9c1ded06e625941a06316a8559d5af
+      internalID: -625702956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_4
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 570
+        width: 78
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12703a9f5c1c3c94680432dd9816fb6e
+      internalID: 796064639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_5
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 573
+        width: 75
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325aa297017d29c4f8bab8fda8578276
+      internalID: -1889185378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_6
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 566
+        width: 137
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c4f24d5de424740a229b583cfcda02
+      internalID: -2024289712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_7
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 660
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54e9058f506e9f4aa0b27b312765461
+      internalID: 972578690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_8
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 567
+        width: 72
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd6cbab817515d47b00c0aff3f3823c
+      internalID: -2101228269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_10
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 568
+        width: 97
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cb39cbef018a647b7b5262b66e5216
+      internalID: 980025475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 437
+        width: 54
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c288a23a32ff9c644bda258e86ce8203
+      internalID: -1091589997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 430
+        width: 54
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46400e28529fb8c4aa2a980809101d1c
+      internalID: -2036550533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 432
+        width: 54
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dd0aa0ac19de049bfb9b7e5771aebd
+      internalID: -1096745432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_14
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 429
+        width: 72
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29740522ca1276488c255155a3087b5
+      internalID: -255027655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_15
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 432
+        width: 67
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6ad70285d15bd44bfbd3122206ce37
+      internalID: 2025661613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_16
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 439
+        width: 71
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e63dfee9a0274388e667472863ee4
+      internalID: 1978560786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_17
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 424
+        width: 132
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aecdd8e90e1c8f49a4d6dc8a2b38373
+      internalID: -946145670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_19
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 420
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257b8d4f6c1805648afe2fd7274eea26
+      internalID: 2114936118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_20
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 421
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71e30055a2aac94dbcb19534f15da0a
+      internalID: 1605695462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 278
+        width: 52
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1227408fd74e746b6dd1bd80b25351
+      internalID: 358450453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 275
+        width: 52
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ba34c5eb0e4984381619bb106be133
+      internalID: 1540225570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_23
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 272
+        width: 52
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe75e401fdff8b42bdcbd527a0e200c
+      internalID: 1653083464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_24
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 269
+        width: 71
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b8efb5cd5102d47bf533b997dee7c9
+      internalID: -740353475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_25
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 266
+        width: 67
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62fd14653325cf4e8a67d24e89a894c
+      internalID: -63009516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_26
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 286
+        width: 69
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1aaedb8e815e6b4ca21eca4d6615b52
+      internalID: 1601414204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_27
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 272
+        width: 137
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ad6ac41908bba4c8c467ef96fa4abd
+      internalID: 102022909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_29
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 266
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745c0426423c036479b3bf9b346ce9f2
+      internalID: 276652951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_30
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 266
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151190b589394b64c8d3712fcd8b439a
+      internalID: 260684981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_31
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 118
+        width: 51
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb02aba79b988e4cbd7c76441b95ea6
+      internalID: 793469627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_32
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 119
+        width: 50
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edd1925403a09840af6def12e08eb93
+      internalID: 1810539054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_33
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 117
+        width: 51
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661c87223677f2749b65b4a0e790bdb7
+      internalID: 1785690862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_34
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 117
+        width: 69
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf797b14222dc6e4c8e449158e1d47b8
+      internalID: 1202924697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_35
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 121
+        width: 75
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc38b78e18659a243b85f7fbfdc32070
+      internalID: -1782630838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_36
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 137
+        width: 67
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c81a093df76a04c9c0e1bf4c511d7e
+      internalID: -881909528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_37
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 125
+        width: 135
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998dfff031937584bacecaba7c288e62
+      internalID: 658191926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_39
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 115
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7a26e1fa6a1ba4a83883a51c72d037
+      internalID: 309534636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_40
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 114
+        width: 93
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558966214ae3cf341a3c3e0a60fd8c00
+      internalID: -769512298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_41
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 50
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc214af1a0bcb540a7b844544ffcf7b
+      internalID: -616915009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_42
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 50
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25306ce2da6ecfe4590c1fe1dcece076
+      internalID: 1250169531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_43
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 50
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1e52bcd09fef2459fc7662715e2038
+      internalID: 897564621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_44
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 69
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86c23599255c554d80153a9e9748989
+      internalID: -885462083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_45
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c811f2992b1bc14eacd7388dd06b57f
+      internalID: 672851576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_46
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 12
+        width: 65
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9d36198f9715c4cac74017c4ce6ab7
+      internalID: 1570974219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_47
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 3
+        width: 113
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d234064a1c41e48b3618304f6a966c
+      internalID: -114158517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_49
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 0
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3ccb9893ee69a49b172548ed2dd1fb
+      internalID: -1845482566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardaparque_trp_50
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 0
+        width: 96
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558182e2c5d93464988ae72578da2e5b
+      internalID: -400901081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4ce0cd00d52ef0c4dbf4a1e1db1b34bc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      guardaparque_trp_0: 162046759
+      guardaparque_trp_1: -394617313
+      guardaparque_trp_10: 980025475
+      guardaparque_trp_11: -1091589997
+      guardaparque_trp_12: -2036550533
+      guardaparque_trp_13: -1096745432
+      guardaparque_trp_14: -255027655
+      guardaparque_trp_15: 2025661613
+      guardaparque_trp_16: 1978560786
+      guardaparque_trp_17: -946145670
+      guardaparque_trp_18: -301588491
+      guardaparque_trp_19: 2114936118
+      guardaparque_trp_2: -1719347081
+      guardaparque_trp_20: 1605695462
+      guardaparque_trp_21: 358450453
+      guardaparque_trp_22: 1540225570
+      guardaparque_trp_23: 1653083464
+      guardaparque_trp_24: -740353475
+      guardaparque_trp_25: -63009516
+      guardaparque_trp_26: 1601414204
+      guardaparque_trp_27: 102022909
+      guardaparque_trp_28: 508657205
+      guardaparque_trp_29: 276652951
+      guardaparque_trp_3: -625702956
+      guardaparque_trp_30: 260684981
+      guardaparque_trp_31: 793469627
+      guardaparque_trp_32: 1810539054
+      guardaparque_trp_33: 1785690862
+      guardaparque_trp_34: 1202924697
+      guardaparque_trp_35: -1782630838
+      guardaparque_trp_36: -881909528
+      guardaparque_trp_37: 658191926
+      guardaparque_trp_38: 1201227819
+      guardaparque_trp_39: 309534636
+      guardaparque_trp_4: 796064639
+      guardaparque_trp_40: -769512298
+      guardaparque_trp_41: -616915009
+      guardaparque_trp_42: 1250169531
+      guardaparque_trp_43: 897564621
+      guardaparque_trp_44: -885462083
+      guardaparque_trp_45: 672851576
+      guardaparque_trp_46: 1570974219
+      guardaparque_trp_47: -114158517
+      guardaparque_trp_48: -1709608608
+      guardaparque_trp_49: -1845482566
+      guardaparque_trp_5: -1889185378
+      guardaparque_trp_50: -400901081
+      guardaparque_trp_6: -2024289712
+      guardaparque_trp_7: 972578690
+      guardaparque_trp_8: -2101228269
+      guardaparque_trp_9: 1161366709
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
