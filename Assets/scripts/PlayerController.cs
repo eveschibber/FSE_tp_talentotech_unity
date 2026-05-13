@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // <-- IMPORTANTE: Librería para reiniciar el juego
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,7 +18,6 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        // Buscamos el componente de audio al inicio
         miAudio = GetComponent<AudioSource>();
     }
 
@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
 
         if (juegoEmpezado)
         {
-            // Saltar
             if (Input.GetButtonDown("Jump") && estaEnSuelo)
             {
                 rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
@@ -39,22 +38,18 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("estaEnSuelo", false);
                 anim.SetTrigger("saltar");
 
-                // REPRODUCIR SONIDO SALTO
                 if (sonidoSalto != null) 
                 {
                     miAudio.PlayOneShot(sonidoSalto);
                 }
             }
 
-            // Disparar
             if (Input.GetKeyDown(KeyCode.F))
             {
                 anim.SetTrigger("disparar");
 
-                // REPRODUCIR SONIDO DISPARO
                 if (sonidoDisparo != null) 
                 {
-                    // Usamos PlayOneShot para que el sonido no se corte si disparás rápido
                     miAudio.PlayOneShot(sonidoDisparo);
                 }
             }
@@ -63,10 +58,26 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) 
     {
+
+        // Esta línea va a escribir en la Consola de Unity el nombre de CUALQUIER cosa que toques
+    Debug.Log("Toqué a: " + collision.gameObject.name + " con el Tag: " + collision.gameObject.tag);
+
+    if (collision.gameObject.CompareTag("Suelo"))
+    {
+        // ... tu código ...
+    }
+        // Detectar Suelo
         if (collision.gameObject.CompareTag("Suelo"))
         {
             estaEnSuelo = true;
             anim.SetBool("estaEnSuelo", true);
+        }
+
+        // --- NUEVO: DETECTAR CIERVO ---
+        if (collision.gameObject.CompareTag("Ciervo"))
+        {
+            // Reinicia la escena actual
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
