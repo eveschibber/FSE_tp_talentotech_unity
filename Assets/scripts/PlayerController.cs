@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private bool estaEnSuelo = true;
     private bool juegoEmpezado = false;
 
+    public GameObject prefabaBolaFuego; // Aquí arrastraremos el prefab
+    public Transform puntoDisparo;      // Un objeto vacío para saber de dónde sale
     // --- VARIABLES DE AUDIO ---
     private AudioSource miAudio;
     public AudioClip sonidoSalto;
@@ -47,6 +49,9 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 anim.SetTrigger("disparar");
+
+                // CREAR LA BOLA DE FUEGO
+                Instantiate(prefabaBolaFuego, puntoDisparo.position, puntoDisparo.rotation);
 
                 if (sonidoDisparo != null) 
                 {
