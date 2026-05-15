@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public float intervalo = 3f;
     
     // NUEVA VARIABLE VISIBLE EN EL EDITOR
-    public float alturaSueloY = -0.5f; 
+    public float alturaSueloY = 120f; 
 
     private bool juegoEmpezado = false;
 
@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
     void GenerarCiervo()
     {
         // USAMOS LA NUEVA VARIABLE PARA LA ALTURA
-        Vector3 posicionSpawn = new Vector3(15, alturaSueloY, 0); 
+        Vector3 posicionSpawn = new Vector3(1500, alturaSueloY, 0); 
         Instantiate(ciervoPrefab, posicionSpawn, Quaternion.identity);
     }
 }

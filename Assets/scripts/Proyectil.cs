@@ -7,23 +7,36 @@ public class Proyectil : MonoBehaviour
 
     void Start()
     {
-        // Se destruye sola después de 3 segundos para no llenar la memoria
         Destroy(gameObject, tiempoDeVida);
     }
 
     void Update()
     {
-        // Se mueve hacia la derecha constantemente
         transform.Translate(Vector2.right * velocidad * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Si choca con un ciervo (usando el Tag que ya creamos)
-        if (collision.CompareTag("Ciervo"))
+        // SI LE PEGA A UN AXIS (Exótico Invasor) -> BUENO
+        if (collision.CompareTag("Axis"))
         {
-            Destroy(collision.gameObject); // Destruye al ciervo
-            Destroy(gameObject);           // Se destruye la bola de fuego
+            if (GameManager.instancia != null)
+            {
+                GameManager.instancia.SumarCorzuela(5); // Sube el nativo, baja el axis
+            }
+            Destroy(collision.gameObject); 
+            Destroy(gameObject);           
+        }
+
+        // SI LE PEGA A UN CORZUELA (Nativo) -> MUY MALO
+        if (collision.CompareTag("Corzuela"))
+        {
+            if (GameManager.instancia != null)
+            {
+                GameManager.instancia.RestarCorzuela(20); // Penalización grave (-20)
+            }
+            Destroy(collision.gameObject); 
+            Destroy(gameObject);           
         }
     }
 }

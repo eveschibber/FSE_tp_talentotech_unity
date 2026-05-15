@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement; // <-- IMPORTANTE: Librería para reiniciar e
 
 public class PlayerController : MonoBehaviour
 {
-    public float fuerzaSalto = 10f;
+    public float fuerzaSalto = 50f;
     private Rigidbody2D rb;
     private Animator anim;
     private bool estaEnSuelo = true;
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
 
         // Esta línea va a escribir en la Consola de Unity el nombre de CUALQUIER cosa que toques
-    Debug.Log("Toqué a: " + collision.gameObject.name + " con el Tag: " + collision.gameObject.tag);
+   // Debug.Log("Toqué a: " + collision.gameObject.name + " con el Tag: " + collision.gameObject.tag);
 
     if (collision.gameObject.CompareTag("Suelo"))
     {
@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // --- NUEVO: DETECTAR CIERVO ---
-        if (collision.gameObject.CompareTag("Ciervo"))
+        if (collision.gameObject.CompareTag("Axis"))
         {
             // Reinicia la escena actual
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);

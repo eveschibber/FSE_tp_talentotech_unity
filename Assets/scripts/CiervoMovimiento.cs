@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CiervoMovimiento : MonoBehaviour
 {
-    public float velocidad = 7f;
+    public float velocidad = 400f;
 
     void Update()
     {
@@ -11,7 +11,7 @@ public class CiervoMovimiento : MonoBehaviour
         transform.Translate(Vector3.left * velocidad * Time.deltaTime, Space.World);
 
         // Si se va muy a la izquierda, desaparece
-        if (transform.position.x < -15f)
+        if (transform.position.x < -1500f)
         {
             Destroy(gameObject);
         }
