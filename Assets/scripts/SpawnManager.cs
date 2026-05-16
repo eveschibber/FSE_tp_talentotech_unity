@@ -2,28 +2,47 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject ciervoPrefab;
-    public float tiempoInicio = 2f;
-    public float intervalo = 3f;
-    
-    // NUEVA VARIABLE VISIBLE EN EL EDITOR
-    public float alturaSueloY = 120f; 
+    [Header("Prefabs de los Ciervos")]
+    public GameObject axisPrefab;       
+    public GameObject corzuelaPrefab;   
 
-    private bool juegoEmpezado = false;
+    [Header("Configuración de Distancia (Ajustable)")]
+    // Estas casillas van a aparecer en el Inspector para que las muevas a gusto
+    public float distanciaX = 1500f; 
+    public float rangoY = 3f;        
 
-    void Update()
+    [Header("Configuración de Tiempo")]
+    public float tiempoEntreSpawns = 3f;
+
+    void Start()
     {
-        if (!juegoEmpezado && Input.GetKeyDown(KeyCode.Space))
-        {
-            juegoEmpezado = true;
-            InvokeRepeating("GenerarCiervo", tiempoInicio, intervalo);
-        }
+        InvokeRepeating("SpawnearAnimal", 2f, tiempoEntreSpawns);
     }
 
-    void GenerarCiervo()
+    void SpawnearAnimal()
     {
-        // USAMOS LA NUEVA VARIABLE PARA LA ALTURA
-        Vector3 posicionSpawn = new Vector3(1500, alturaSueloY, 0); 
-        Instantiate(ciervoPrefab, posicionSpawn, Quaternion.identity);
+        // Conseguimos la posición de la cámara
+        float cameraX = Camera.main.transform.position.x;
+        float cameraY = Camera.main.transform.position.y;
+
+        // Usamos las variables del Inspector en la fórmula
+        // Sumamos la distanciaX al eje X de la cámara
+        // Y hacemos el rango aleatorio usando el valor de rangoY (positivo y negativo)
+        Vector3 posicionSpawn = new Vector3(
+            cameraX + distanciaX, 
+            cameraY + Random.Range(-rangoY, rangoY), 
+            0f
+        );
+
+        int bichoAleatorio = Random.Range(0, 2);
+
+        if (bichoAleatorio == 0)
+        {
+            Instantiate(axisPrefab, posicionSpawn, Quaternion.identity);
+        }
+        else
+        {
+            Instantiate(corzuelaPrefab, posicionSpawn, Quaternion.identity);
+        }
     }
 }
