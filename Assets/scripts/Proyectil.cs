@@ -3,40 +3,33 @@ using UnityEngine;
 public class Proyectil : MonoBehaviour
 {
     public float velocidad = 15f;
-    public float tiempoDeVida = 3f;
-
-    void Start()
-    {
-        Destroy(gameObject, tiempoDeVida);
-    }
+    public float puntosImpacto = 10f; // El valor base que se va a mover (ej: 10%)
 
     void Update()
     {
-        transform.Translate(Vector2.right * velocidad * Time.deltaTime);
+        transform.Translate(Vector3.right * velocidad * Time.deltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D otroObjeto)
     {
-        // SI LE PEGA A UN AXIS (Exótico Invasor) -> BUENO
-        if (collision.CompareTag("Axis"))
-        {
-            if (GameManager.instancia != null)
-            {
-                GameManager.instancia.SumarCorzuela(5); // Sube el nativo, baja el axis
-            }
-            Destroy(collision.gameObject); 
-            Destroy(gameObject);           
-        }
+        ControladorEcobalanza ecobalanza = FindObjectOfType<ControladorEcobalanza>();
+        if (ecobalanza == null) return;
 
-        // SI LE PEGA A UN CORZUELA (Nativo) -> MUY MALO
-        if (collision.CompareTag("Corzuela"))
+        if (otroObjeto.CompareTag("Axis"))
         {
-            if (GameManager.instancia != null)
-            {
-                GameManager.instancia.RestarCorzuela(20); // Penalización grave (-20)
-            }
-            Destroy(collision.gameObject); 
-            Destroy(gameObject);           
+            // Avisamos que le pegamos a un Axis
+            ecobalanza.ImpactoAxis(puntosImpacto);
+            
+            Destroy(otroObjeto.gameObject);
+            Destroy(gameObject); 
+        }
+        else if (otroObjeto.CompareTag("Corzuela"))
+        {
+            // Avisamos que nos equivocamos y le pegamos a una Corzuela
+            ecobalanza.ImpactoCorzuela(puntosImpacto);
+            
+            Destroy(otroObjeto.gameObject); // Opcional: quitás la corzuela por el error
+            Destroy(gameObject);
         }
     }
 }
