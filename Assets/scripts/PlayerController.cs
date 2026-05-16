@@ -61,16 +61,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) 
+private void OnCollisionEnter2D(Collision2D collision) 
     {
-
-        // Esta línea va a escribir en la Consola de Unity el nombre de CUALQUIER cosa que toques
-   // Debug.Log("Toqué a: " + collision.gameObject.name + " con el Tag: " + collision.gameObject.tag);
-
-    if (collision.gameObject.CompareTag("Suelo"))
-    {
-        // ... tu código ...
-    }
         // Detectar Suelo
         if (collision.gameObject.CompareTag("Suelo"))
         {
@@ -78,9 +70,12 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("estaEnSuelo", true);
         }
 
-        // --- NUEVO: DETECTAR CIERVO ---
-        if (collision.gameObject.CompareTag("Axis"))
+        // --- DETECTAR ENEMIGO O FAUNA NATIVA (Cualquiera te hace perder) ---
+        // Usamos || que significa "O" en programación
+        if (collision.gameObject.CompareTag("Axis") || collision.gameObject.CompareTag("Corzuela"))
         {
+            Debug.Log("¡El Guardaparque chocó contra un animal! Reiniciando...");
+            
             // Reinicia la escena actual
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

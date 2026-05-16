@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     [Header("Configuración de Distancia (Ajustable)")]
     // Estas casillas van a aparecer en el Inspector para que las muevas a gusto
     public float distanciaX = 1500f; 
-    public float rangoY = 3f;        
+    public float rangoY = 130f;        
 
     [Header("Configuración de Tiempo")]
     public float tiempoEntreSpawns = 3f;
@@ -19,18 +19,17 @@ public class SpawnManager : MonoBehaviour
         InvokeRepeating("SpawnearAnimal", 2f, tiempoEntreSpawns);
     }
 
-    void SpawnearAnimal()
+void SpawnearAnimal()
     {
         // Conseguimos la posición de la cámara
         float cameraX = Camera.main.transform.position.x;
-        float cameraY = Camera.main.transform.position.y;
 
-        // Usamos las variables del Inspector en la fórmula
-        // Sumamos la distanciaX al eje X de la cámara
-        // Y hacemos el rango aleatorio usando el valor de rangoY (positivo y negativo)
+        // EL CAMBIO ACÁ:
+        // En el eje X usamos la distancia ajustable.
+        // En el eje Y usamos el valor de rangoY DIRECTO (sin el Random.Range) para que sea una altura fija.
         Vector3 posicionSpawn = new Vector3(
             cameraX + distanciaX, 
-            cameraY + Random.Range(-rangoY, rangoY), 
+            rangoY, // Ya no es aleatorio, ahora es la altura fija del piso
             0f
         );
 
